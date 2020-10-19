@@ -1,0 +1,14 @@
+[
+    {
+        "marca": "toyota",
+        "modelo": "2006",
+        "patente": "52vfk",
+        "precio": "62000"
+    },
+    {
+        "marca": "audi",
+        "modelo": "2005",
+        "patente": "xsd58",
+        "precio": "85000"
+    }
+]

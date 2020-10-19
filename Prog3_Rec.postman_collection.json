@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "7a63d8fb-8252-4b1c-bcdc-7a189a1de627",
+		"name": "Prog3_Rec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Punto 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ale@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}registro",
+					"host": [
+						"{{url}}registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "{{email}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}login",
+					"host": [
+						"{{url}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "marca",
+							"value": "{{marca}}",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "{{modelo}}",
+							"type": "text"
+						},
+						{
+							"key": "ṕatente",
+							"value": "{{patente}}",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "{{precio}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}vehiculo",
+					"host": [
+						"{{url}}vehiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}patente/{{patente}}",
+					"host": [
+						"{{url}}patente"
+					],
+					"path": [
+						"{{patente}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "{{tipo}}",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "{{precioServ}}",
+							"type": "text"
+						},
+						{
+							"key": "demora",
+							"value": "{{demora}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}servicio",
+					"host": [
+						"{{url}}servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 6",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InNjb2RtYW4xQHRlY2hjcnVuY2guY29tIiwidXNlclR5cGUiOiJhZG1pbiJ9.xzCI72Reow7vxOXQAzW2Hy1vWokpnR0TMd0HVdPL12s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "patente",
+							"value": "{{patente}}",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "19-10-2020",
+							"type": "text"
+						},
+						{
+							"key": "tipoServ",
+							"value": "{{tipo}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}turno",
+					"host": [
+						"{{url}}turno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFsZUBnbWFpbC5jb20iLCJ1c2VyVHlwZSI6InVzZXIifQ.XAps2SYjznrVJRFOr1zgp7m8emqYxQPIkX37qm2w8L8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InNjb2RtYW4xQHRlY2hjcnVuY2guY29tIiwidXNlclR5cGUiOiJhZG1pbiJ9.xzCI72Reow7vxOXQAzW2Hy1vWokpnR0TMd0HVdPL12s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "5000km",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}stats?XDEBUG_SESSION_START=prueba",
+					"host": [
+						"{{url}}stats"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_SESSION_START",
+							"value": "prueba"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "5fef0c12-82d3-4e01-8b07-dfdee7e4e5ee",
+			"key": "email",
+			"value": "ale@gmail.com"
+		},
+		{
+			"id": "249f1e65-e833-41b6-9e7e-017ea2ec8124",
+			"key": "password",
+			"value": "56f2ffvvf"
+		},
+		{
+			"id": "e622911d-7d54-4379-9827-43ee23b7d076",
+			"key": "marca",
+			"value": "audi"
+		},
+		{
+			"id": "7dc1017b-da95-4dd2-bd27-1404c8ba21ee",
+			"key": "modelo",
+			"value": "2005"
+		},
+		{
+			"id": "25a563f1-2ad7-48f8-86d8-a3fd7ca5a072",
+			"key": "patente",
+			"value": "xsd58"
+		},
+		{
+			"id": "a44d8027-9659-4eb7-b45f-5a2d91946b87",
+			"key": "precio",
+			"value": "85000"
+		},
+		{
+			"id": "548f6462-8804-4732-91ff-a19a7082629d",
+			"key": "url",
+			"value": "http://localhost:80/PhpstormProjects/parcial/index.php/"
+		},
+		{
+			"id": "de2abbb3-1e44-4e03-ae2f-63b8bb674799",
+			"key": "tipo",
+			"value": "10000km"
+		},
+		{
+			"id": "16692f44-2e40-42b6-94b6-aae4a7742493",
+			"key": "precioServ",
+			"value": "2500"
+		},
+		{
+			"id": "8094fb32-cbdf-4046-8f54-c72873cbf96e",
+			"key": "demora",
+			"value": "20"
+		},
+		{
+			"id": "05f523ff-679e-4d68-b22b-e008b3ed4636",
+			"key": "fecha",
+			"value": "19-10-2020"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

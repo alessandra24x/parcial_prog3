@@ -1,0 +1,27 @@
+[
+    {
+        "email": "tkier0@wufoo.com",
+        "userType": "user",
+        "password": "3NeewGPF9Gt"
+    },
+    {
+        "email": "scodman1@techcrunch.com",
+        "userType": "admin",
+        "password": "tE7JAAa"
+    },
+    {
+        "email": "ale@gmail.com",
+        "userType": "user",
+        "password": "56f2ffvvf"
+    },
+    {
+        "email": "ale12@gmail.com",
+        "userType": "user",
+        "password": "56f2ffv"
+    },
+    {
+        "email": "ale13@gmail.com",
+        "userType": "user",
+        "password": "56f2ffvld"
+    }
+]

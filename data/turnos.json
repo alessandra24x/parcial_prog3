@@ -1,0 +1,34 @@
+[
+    {
+        "fecha": "19-10-2020",
+        "patente": "xsd58",
+        "marca": "audi",
+        "modelo": "2005",
+        "precio": "85000",
+        "tipoServ": "10000km"
+    },
+    {
+        "fecha": "19-10-2020",
+        "patente": "121",
+        "marca": null,
+        "modelo": null,
+        "precio": null,
+        "tipoServ": "10000km"
+    },
+    {
+        "fecha": "19-10-2020",
+        "patente": "121",
+        "marca": null,
+        "modelo": null,
+        "precio": null,
+        "tipoServ": "10000km"
+    },
+    {
+        "fecha": "19-10-2020",
+        "patente": "121",
+        "marca": null,
+        "modelo": null,
+        "precio": null,
+        "tipoServ": "10000km"
+    }
+]
